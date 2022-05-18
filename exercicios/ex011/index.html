@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias HTML</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tenta abrir esse site em varios dispositivos diferentes ou aumenta e diminui o tamanho do navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png"> 
+        <img src="imagens/foto-g.png" alt="foto flexivel">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audio em html</p>
+    <audio src="midia/01 BREGA FUNK CD POP NA BATIDA OS MELHORES LANÇAMENTOS DE OUTUBRO DE 2020.mp3" controls autoplay></audio>
+
+    <h2>Outra forma de add audio</h2>
+    <audio preload="metadata"  loop> <!--autoplay controls-->
+        <source src="midia/01 BREGA FUNK CD POP NA BATIDA OS MELHORES LANÇAMENTOS DE OUTUBRO DE 2020.mp3" type="audio/mpeg">
+        <source src="midia/01 BREGA FUNK CD POP NA BATIDA OS MELHORES LANÇAMENTOS DE OUTUBRO DE 2020.mp3" type="audio/ogg">
+        <source src="midia/01 BREGA FUNK CD POP NA BATIDA OS MELHORES LANÇAMENTOS DE OUTUBRO DE 2020.mp3" type="wav">
+        <p>Infelizmente seu navegador não consegue reproduzir esse audio</p>
+        <a href="midia/01 BREGA FUNK CD POP NA BATIDA OS MELHORES LANÇAMENTOS DE OUTUBRO DE 2020.mp3">Clique aqui para baixar o audio em MP3 </a>
+    </audio>
+</body>
+</html>
